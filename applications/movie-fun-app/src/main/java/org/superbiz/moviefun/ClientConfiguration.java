@@ -10,8 +10,10 @@ import org.superbiz.moviefun.moviesapi.MoviesClient;
 @Configuration
 public class ClientConfiguration {
 
-    @Value("${albums.url}") String albumsUrl;
-    @Value("${movies.url}") String moviesUrl;
+    @Value("${albums.url}")
+    String albumsUrl;
+    @Value("${movies.url}")
+    String moviesUrl;
 
     @Bean
     public AlbumsClient albumsClient(RestOperations restOperations) {
