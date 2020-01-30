@@ -1,0 +1,1000 @@
+  595  history
+  596  history > history.log
+  597  ls
+  598  rm history.log 
+  599  cd ../pal-tracker/
+  600  git status
+  601  rm *
+  602  ll
+  603  rm -Rfv .
+  604  rm -Rfv *
+  605  history > history.log
+  606  git commit -m "history log"
+  607  git add .
+  608  git commit -m "history log"
+  609  git push origin:history_20190114
+  610  git push HEAD:history_20190114
+  611  git push origin HEAD:history_20190114
+  612  git reset origin/master
+  613  git status
+  614  git reset origin/master --hard
+  615  git status
+  616  rm history.log 
+  617  git st
+  618  find .
+  619  git branches
+  620  git branch
+  621  git list branch
+  622  git branch -r
+  623  git fetch --prune
+  624  git branch -r
+  625  git branch
+  626  cf service-key pal-tracker
+  627  cf service-key pal-tracker mykey
+  628  cf service-key tracker-database mykey
+  629  cf service-key tracker-database
+  630  cf service-key tracker-database mykey
+  631  cf env pal-tracker
+  632  man nc
+  633  git cherry-pick jdbc-start
+  634  git reflog
+  635  git tag
+  636  ./gradlew clean test
+  637  git add .
+  638  ./gradlew clean test
+  639  git commit -m "Add a real data source and jdbctemplate."
+  640  git push
+  641  cd ~/workspace/assignment-submission
+  642  ./gradlew cloudNativeDeveloperDatabaseAccess -PserverUrl=https://pal-tracker-pravin.apps.evans.pal.pivotal.io/
+  643  git cherry-pick actuator-start
+  644  cd ../pal-tracker/
+  645  git cherry-pick actuator-start
+  646  ./gradlew clean bootrun
+  647  killall -9 java
+  648  ./gradlew clean bootrun
+  649  ./gradlew clean test
+  650  killall -9 java
+  651  ./gradlew clean test
+  652  git stash
+  653  git stash pop
+  654  mysql
+  655  ./gradlew clean test
+  656  git add .
+  657  git commit -m "Add actuator"
+  658  git push
+  659  cf set-env pal-tracker MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE "*"
+  660  cf set-env pal-tracker MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS always
+  661  cd ~/workspace/assignment-submission
+  662  cd ../pal-tracker/
+  663  ./gradlew clean test
+  664  cd ../assignment-submission/
+  665  ./gradlew cloudNativeDeveloperHealthMonitoring -PserverUrl=http://pal-tracker-pravin.apps.evans.pal.pivotal.io/actuator
+  666  history | grep curl
+  667  curl -i -XPOST -H"Content-Type: application/json" localhost:8080/time-entries -d"{\"projectId\": 1, \"userId\": 2, \"date\": \"2019-01-01\", \"hours\": 8}"
+  668  curl -i -XPOST -H"Content-Type: application/json" pal-tracker-pravin.apps.evans.pal.pivotal.io/time-entries -d"{\"projectId\": 1, \"userId\": 2, \"date\": \"2019-01-01\", \"hours\": 8}"
+  669  curl -i -XPOST -H"Content-Type: application/json" pal-tracker-pravin.apps.evans.pal.pivotal.io/time-entries -d"{\"projectId\": 2, \"userId\": 2, \"date\": \"2019-01-01\", \"hours\": 8}"
+  670  ./gradlew clean bootrun
+  671  cd ../pal-tracker/
+  672  ./gradlew clean bootrun
+  673  history -w
+  674  ./gradlew clean bootrun
+  675  cf app
+  676  cf app pal-tracker
+  677  cf scale
+  678  cf scale pal-tracker -m 768m
+  679  cf scale pal-tracker -i 3
+  680  cf app pal-tracker
+  681  cf quotas
+  682  cd ~/workspace/assignment-submission
+  683  ./gradlew cloudNativeDeveloperScaling -PserverUrl=http://pal-tracker-pravin.apps.evans.pal.pivotal.io/
+  684  cf
+  685  cf | grep quota
+  686  cf --help | grep quota
+  687  cf --help
+  688  cf quota
+  689  cf space-quotas
+  690  cf org
+  691  cf orgs
+  692  cf quota default
+  693  cf org
+  694  cf org pgangatirkar.gaic.com
+  695  git tags
+  696  git tag
+  697  cd ../pal-tracker/
+  698  git tag
+  699  open .
+  700  cd ..
+  701  ls
+  702  cd pal-tracker-distributed/
+  703  git log --graph --decorate --oneline --all
+  704  cd ..
+  705  cd assignment-submission/
+  706  idea .
+  707  cd .
+  708  cd ..
+  709  ls
+  710  cd pal-tracker-distributed/
+  711  git log --graph --decorate --oneline --all
+  712  git st
+  713  git status
+  714  git remote add origin https://github.com/reply2ppg/pal-tracker-distributed.git
+  715  git push origin master --tags
+  716  git tag
+  717  idea .
+  718  idea.
+  719  idea .
+  720  cf create-service --help
+  721  history | grep cf service
+  722  history | grep "cf service"
+  723  history | grep "cf create-service"
+  724  cf create-service p.mysql db-small tracker-allocations-database
+  725  cf create-service p.mysql db-small tracker-backlog-database
+  726  cf create-service p.mysql db-small tracker-registration-database
+  727  cf create-service p.mysql db-small tracker-timesheets-database
+  728  cf services
+  729  mysql -uroot < databases/create_databases.sql
+  730  ./gradlew devMigrate testMigrate
+  731  ./gradlew clean build
+  732  ./gradlew applications:registration-server:bootRun
+  733  ./gradlew bootRun --parallel
+  734  ./gradlew bootRun --parallel
+  735  curl -i http://registration-pal-matt-pravin.apps.evans.pal.pivotal.io/accounts?ownerId=4
+  736  curl -i -XPOST -H"Content-Type: application/json" http://registration-pal-matt-pravin.apps.evans.pal.pivotal.io/projects -d"{\"name\": \"Project B\", \"accountId\": \"4\"}"
+  737  curl -i -XPOST -H"Content-Type: application/json" http://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io/allocations/ -d"{\"projectId\": \"5\", \"userId\": \"4\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  738  curl -i -XPOST -H"Content-Type: application/json" http://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io/allocations/ -d"{\"projectId\": \"4\", \"userId\": \"4\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  739  curl -i -XPOST -H"Content-Type: application/json" http://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io/allocations/ -d"{\"projectId\": \"5\", \"userId\": \"4\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  740  curl -i -XPOST -H"Content-Type: application/json" http://registration-pal-matt-pravin.apps.evans.pal.pivotal.io/projects -d"{\"name\": \"Project B\", \"accountId\": \"4\"}"
+  741  curl -i -XPOST -H"Content-Type: application/json" http://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io/allocations/ -d"{\"projectId\": \"4\", \"userId\": \"4\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  742  ./gradlew cloudNativeDeveloperDistributedSystemWithCircuitBreaker     -PregistrationServerUrl=https://registration-pal-matt-pravin.apps.evans.pal.pivotal.io     -PbacklogServerUrl=https://backlog-pal-matt-pravin.apps.evans.pal.pivotal.io     -PallocationsServerUrl=https://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io \
+  743  cd ../assignment-submission/
+  744  ./gradlew cloudNativeDeveloperDistributedSystemWithCircuitBreaker     -PregistrationServerUrl=https://registration-pal-matt-pravin.apps.evans.pal.pivotal.io     -PbacklogServerUrl=https://backlog-pal-matt-pravin.apps.evans.pal.pivotal.io     -PallocationsServerUrl=https://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io     -PtimesheetsServerUrl=https://timesheets-pal-matt-pravin.apps.evans.pal.pivotal.io
+  745  cd ../pal-tracker-distributed/
+  746  curl -i -XPOST -H"Content-Type: application/json" http://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io/allocations/ -d"{\"projectId\": \"4\", \"userId\": \"4\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  747  curl -i -XPOST -H"Content-Type: application/json" http://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io/allocations/ -d"{\"projectId\": \"5\", \"userId\": \"4\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  748  history | grep cf-create
+  749  history | grep cf-create-service
+  750  history
+  751  history | grep "cf create-service"
+  752  cf marketplace
+  753  cf create-service p-identity uaa tracker-sso
+  754  cf services
+  755  ./gradlew clean build
+  756  ./gradlew bootRun --parallel
+  757  watch -d -n 1 'mysql -u root movies -e "select * from album_scheduler_task;"'
+  758  mvn clean package
+  759  cf logs moviefun
+  760  rabbitmq-server start
+  761  sudo rabbitmq-server start
+  762  rabbitmq-server stop
+  763  sudo rabbitmq-server stop
+  764  cf services
+  765  cf marketplace
+  766  cf create-service p.rabbitmq standard -n rabbit
+  767  cf create-service p.rabbitmq standard rabbit
+  768  cf services
+  769  curl -X POST http://localhost:8080/rabbit -d ""
+  770  cf service rabbit
+  771  cf env moviefun
+  772  mvn clean package
+  773  cf push
+  774  cf logs
+  775  cf logs moviefun
+  776  cf push -f manifest-registration.yml 
+  777  cf set-env tracker-registration GRANT_TYPE client_credentials
+  778  cf restart tracker-registration
+  779  cf unbind --help
+  780  cf unbind-service --help
+  781  cf unbind-service tracker-registration tracker-sso
+  782  cf bind-service tracker-registration tracker-sso
+  783  git status
+  784  git add .
+  785  git commit -m "update registration manifest"
+  786  git push
+  787  cf env tracker-allocations
+  788  curl -k "https://login.sys.evans.pal.pivotal.io/oauth/token" -i -u "510555ce-4a4a-4eff-9750-adca3c51ac67:d0a947d1-ab04-49c1-971f-1b282d504808" -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=client_credentials&response_type=token'
+  789  curl -i registration-pal-matt-pravin.apps.evans.pal.pivotal.io/users/1
+  790  curl -i registration-pal-matt-pravin.apps.evans.pal.pivotal.io/users/1 -H"Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vdWFhLnN5cy5ldmFucy5wYWwucGl2b3RhbC5pby90b2tlbl9rZXlzIiwia2lkIjoia2V5LTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiI0MjQzNWRkZTZjNjE0NTNlOGFmODQ1MTdkNWI5MmNjYiIsInN1YiI6IjUxMDU1NWNlLTRhNGEtNGVmZi05NzUwLWFkY2EzYzUxYWM2NyIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiY2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiYXpwIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiJlOGEzMjgwNCIsImlhdCI6MTU3OTYyNjU5OSwiZXhwIjoxNTc5NjY5Nzk5LCJpc3MiOiJodHRwczovL3VhYS5zeXMuZXZhbnMucGFsLnBpdm90YWwuaW8vb2F1dGgvdG9rZW4iLCJ6aWQiOiJ1YWEiLCJhdWQiOlsiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwidWFhIl19.qJ9G4EtCjd-Nk9ZhMhgS5SBSqYkgWiap7FrqUtFIW13OukeMCGC4GG_tVegChgsvvF9yhVjl9GAl06XEYZUsHsl_8BTtUY7Mcx6tv-eY3B9xpoLtc3S47noLBoUGdF8vPZxsH1McaZZ8_IVM0js0ndZUvdgshIi_cfgIPEx83tIHlaFKFwyYqGppm7bGxgo-uxXhJQma2ZJZ0B7OsMtAduBkHNGZFJrqieNgLeG_8KkKUZvgxwChWaCPoNzoBDOnRnudis8piOP0Vf0StvQokffPpHaaZG2PW56weuaD3qR5meX778HO8zpu7YduVxdKnVd4Sh9mOLoDRA-86IDBGw"
+  791  curl -i registration-pal-matt-pravin.apps.evans.pal.pivotal.io/users/2 -H"Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vdWFhLnN5cy5ldmFucy5wYWwucGl2b3RhbC5pby90b2tlbl9rZXlzIiwia2lkIjoia2V5LTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiI0MjQzNWRkZTZjNjE0NTNlOGFmODQ1MTdkNWI5MmNjYiIsInN1YiI6IjUxMDU1NWNlLTRhNGEtNGVmZi05NzUwLWFkY2EzYzUxYWM2NyIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiY2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiYXpwIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiJlOGEzMjgwNCIsImlhdCI6MTU3OTYyNjU5OSwiZXhwIjoxNTc5NjY5Nzk5LCJpc3MiOiJodHRwczovL3VhYS5zeXMuZXZhbnMucGFsLnBpdm90YWwuaW8vb2F1dGgvdG9rZW4iLCJ6aWQiOiJ1YWEiLCJhdWQiOlsiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwidWFhIl19.qJ9G4EtCjd-Nk9ZhMhgS5SBSqYkgWiap7FrqUtFIW13OukeMCGC4GG_tVegChgsvvF9yhVjl9GAl06XEYZUsHsl_8BTtUY7Mcx6tv-eY3B9xpoLtc3S47noLBoUGdF8vPZxsH1McaZZ8_IVM0js0ndZUvdgshIi_cfgIPEx83tIHlaFKFwyYqGppm7bGxgo-uxXhJQma2ZJZ0B7OsMtAduBkHNGZFJrqieNgLeG_8KkKUZvgxwChWaCPoNzoBDOnRnudis8piOP0Vf0StvQokffPpHaaZG2PW56weuaD3qR5meX778HO8zpu7YduVxdKnVd4Sh9mOLoDRA-86IDBGw"
+  792  curl -i registration-pal-matt-pravin.apps.evans.pal.pivotal.io/users/3 -H"Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vdWFhLnN5cy5ldmFucy5wYWwucGl2b3RhbC5pby90b2tlbl9rZXlzIiwia2lkIjoia2V5LTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiI0MjQzNWRkZTZjNjE0NTNlOGFmODQ1MTdkNWI5MmNjYiIsInN1YiI6IjUxMDU1NWNlLTRhNGEtNGVmZi05NzUwLWFkY2EzYzUxYWM2NyIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiY2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiYXpwIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiJlOGEzMjgwNCIsImlhdCI6MTU3OTYyNjU5OSwiZXhwIjoxNTc5NjY5Nzk5LCJpc3MiOiJodHRwczovL3VhYS5zeXMuZXZhbnMucGFsLnBpdm90YWwuaW8vb2F1dGgvdG9rZW4iLCJ6aWQiOiJ1YWEiLCJhdWQiOlsiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwidWFhIl19.qJ9G4EtCjd-Nk9ZhMhgS5SBSqYkgWiap7FrqUtFIW13OukeMCGC4GG_tVegChgsvvF9yhVjl9GAl06XEYZUsHsl_8BTtUY7Mcx6tv-eY3B9xpoLtc3S47noLBoUGdF8vPZxsH1McaZZ8_IVM0js0ndZUvdgshIi_cfgIPEx83tIHlaFKFwyYqGppm7bGxgo-uxXhJQma2ZJZ0B7OsMtAduBkHNGZFJrqieNgLeG_8KkKUZvgxwChWaCPoNzoBDOnRnudis8piOP0Vf0StvQokffPpHaaZG2PW56weuaD3qR5meX778HO8zpu7YduVxdKnVd4Sh9mOLoDRA-86IDBGw"
+  793  curl -i registration-pal-matt-pravin.apps.evans.pal.pivotal.io/users/4 -H"Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vdWFhLnN5cy5ldmFucy5wYWwucGl2b3RhbC5pby90b2tlbl9rZXlzIiwia2lkIjoia2V5LTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiI0MjQzNWRkZTZjNjE0NTNlOGFmODQ1MTdkNWI5MmNjYiIsInN1YiI6IjUxMDU1NWNlLTRhNGEtNGVmZi05NzUwLWFkY2EzYzUxYWM2NyIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiY2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiYXpwIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiJlOGEzMjgwNCIsImlhdCI6MTU3OTYyNjU5OSwiZXhwIjoxNTc5NjY5Nzk5LCJpc3MiOiJodHRwczovL3VhYS5zeXMuZXZhbnMucGFsLnBpdm90YWwuaW8vb2F1dGgvdG9rZW4iLCJ6aWQiOiJ1YWEiLCJhdWQiOlsiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwidWFhIl19.qJ9G4EtCjd-Nk9ZhMhgS5SBSqYkgWiap7FrqUtFIW13OukeMCGC4GG_tVegChgsvvF9yhVjl9GAl06XEYZUsHsl_8BTtUY7Mcx6tv-eY3B9xpoLtc3S47noLBoUGdF8vPZxsH1McaZZ8_IVM0js0ndZUvdgshIi_cfgIPEx83tIHlaFKFwyYqGppm7bGxgo-uxXhJQma2ZJZ0B7OsMtAduBkHNGZFJrqieNgLeG_8KkKUZvgxwChWaCPoNzoBDOnRnudis8piOP0Vf0StvQokffPpHaaZG2PW56weuaD3qR5meX778HO8zpu7YduVxdKnVd4Sh9mOLoDRA-86IDBGw"
+  794  curl -i allocations-pal-matt-pravin.apps.evans.pal.pivotal.io/allocations?projectId=1 -H"Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vdWFhLnN5cy5ldmFucy5wYWwucGl2b3RhbC5pby90b2tlbl9rZXlzIiwia2lkIjoia2V5LTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiI0MjQzNWRkZTZjNjE0NTNlOGFmODQ1MTdkNWI5MmNjYiIsInN1YiI6IjUxMDU1NWNlLTRhNGEtNGVmZi05NzUwLWFkY2EzYzUxYWM2NyIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiY2lkIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiYXpwIjoiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiJlOGEzMjgwNCIsImlhdCI6MTU3OTYyNjU5OSwiZXhwIjoxNTc5NjY5Nzk5LCJpc3MiOiJodHRwczovL3VhYS5zeXMuZXZhbnMucGFsLnBpdm90YWwuaW8vb2F1dGgvdG9rZW4iLCJ6aWQiOiJ1YWEiLCJhdWQiOlsiNTEwNTU1Y2UtNGE0YS00ZWZmLTk3NTAtYWRjYTNjNTFhYzY3IiwidWFhIl19.qJ9G4EtCjd-Nk9ZhMhgS5SBSqYkgWiap7FrqUtFIW13OukeMCGC4GG_tVegChgsvvF9yhVjl9GAl06XEYZUsHsl_8BTtUY7Mcx6tv-eY3B9xpoLtc3S47noLBoUGdF8vPZxsH1McaZZ8_IVM0js0ndZUvdgshIi_cfgIPEx83tIHlaFKFwyYqGppm7bGxgo-uxXhJQma2ZJZ0B7OsMtAduBkHNGZFJrqieNgLeG_8KkKUZvgxwChWaCPoNzoBDOnRnudis8piOP0Vf0StvQokffPpHaaZG2PW56weuaD3qR5meX778HO8zpu7YduVxdKnVd4Sh9mOLoDRA-86IDBGw"
+  795  cd ../assignment-submission/
+  796  ./gradlew cloudNativeDeveloperDistributedSystemWithSecurity     -PuaaUrl=https://login.sys.evans.pal.pivotal.io     -PclientId=510555ce-4a4a-4eff-9750-adca3c51ac67     -PclientSecret=d0a947d1-ab04-49c1-971f-1b282d504808     -PregistrationServerUrl=https://registration-pal-matt-pravin.apps.evans.pal.pivotal.io     -PbacklogServerUrl=https://backlog-pal-matt-pravin.apps.evans.pal.pivotal.io     -PallocationsServerUrl=https://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io     -PtimesheetsServerUrl=https://timesheets-pal-matt-pravin.apps.evans.pal.pivotal.io
+  797  mkdir ~/workspace/tracker-config
+  798  cd ../tracker-config/
+  799  git init
+  800  git remote add origin https://github.com/reply2ppg/tracker-config.git
+  801  git add application.properties
+  802  git commit -m"Initial commit"
+  803  git push -u origin master
+  804  cf marketplace
+  805  cf create-service p-config-server standard tracker-config-server -c "{\"git\": {\"uri\": \"https://github.com/reply2ppg/tracker-config.git\", \"label\": \"master\"}}"
+  806  cf services
+  807  ./gradlew clean build
+  808  cd ..
+  809  cd pal-tracker-distributed/
+  810  ./gradlew clean build
+  811  curl -i localhost:8083/users/4 -H"Authorization: Bearer 4197d788-fc16-43b3-a0f9-4bb74a28fe2b"
+  812  curl 'http://localhost:8999/oauth/token' -i -u 'tracker-client:supersecret' -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=client_credentials&response_type=token&token_format=opaque'
+  813  curl -i localhost:8083/users/4 -H"Authorization: Bearer 73a782e1-01e3-466e-a0b3-6fa62ac2e204"
+  814  curl -i localhost:8081/allocations?projectId=1 -H"Authorization: Bearer 73a782e1-01e3-466e-a0b3-6fa62ac2e204"
+  815  cf env tracker-allocations
+  816  cf services
+  817  git add .
+  818  git commit -m "Add configuration server"
+  819  git push
+  820  cf env tracker-timesheets
+  821  cf push -f manifest-registration.yml 
+  822  cf env tracker-timesheets
+  823  cf env tracker-registration
+  824  cf set-env tracker-timesheets APPLICATION_OAUTH_ENABLED false
+  825  cf restart tracker-timesheets
+  826  cf unset-env tracker-timesheets APPLICATION_OAUTH_ENABLED 
+  827  cf restart tracker-timesheets
+  828  cd ..
+  829  cd assignment-submission/
+  830  ./gradlew cloudNativeDeveloperDistributedSystemWithConfigServer     -PuaaUrl=https://login.sys.evans.pal.pivotal.io     -PclientId=510555ce-4a4a-4eff-9750-adca3c51ac67     -PclientSecret=d0a947d1-ab04-49c1-971f-1b282d504808     -PregistrationServerUrl=https://registration-pal-matt-pravin.apps.evans.pal.pivotal.io     -PbacklogServerUrl=https://backlog-pal-matt-pravin.apps.evans.pal.pivotal.io     -PallocationsServerUrl=https://allocations-pal-matt-pravin.apps.evans.pal.pivotal.io     -PtimesheetsServerUrl=https://timesheets-pal-matt-pravin.apps.evans.pal.pivotal.io
+  831  cd ..
+  832  cd pal-tracker-distributed/
+  833  cf delete --help
+  834  cf delete pal-tracker
+  835  cf delete tracker-allocations
+  836  cf delete tracker-backlog
+  837  cf delete tracker-timesheets
+  838  cf services
+  839  cf delete-service --help
+  840  cf delete-service tracker-allocations-database
+  841  cf delete-service --help
+  842  cf delete-service tracker-allocations-database -f
+  843  cf service-keys
+  844  cf service-keys tracker-allocations-database
+  845  cf delete-service-key --help
+  846  cf delete-service-key tracker-allocation-database flyway-migration-key
+  847  cf delete-service-key tracker-allocations-database flyway-migration-key
+  848  cd ..
+  849  cd movie-fun/
+  850  git log --graph --decorate --oneline --all
+  851  cf create-service p.mysql db-small movies-mysql
+  852  cf services
+  853  git remote add origin https://github.com/reply2ppg/movie-fun.git
+  854  git push -u origin master
+  855  git st
+  856  git status
+  857  git add .
+  858  git commit -am "Initial commit."
+  859  git push -u origin master --tags
+  860  git status
+  861  git log --graph --decorate --oneline --all
+  862  git add .
+  863  sudo update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64
+  864  java --version
+  865  javac -version
+  866  mvn clean package -DSkipTests
+  867  sudo update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64
+  868  rm -rf ${TOMEE_DIRECTORY}/webapps/*
+  869  rm -rf ${TOMEE_DIRECTORY}/data/*
+  870  export
+  871  rm -rf ~/dev/tomee/webapps/*
+  872  rm -rf ~/dev/tomee/data/*
+  873  cp target/moviefun.war ~dev/tomee/webapps
+  874  cp target/moviefun.war ~/dev/tomee/webapps
+  875  mvn clean package -DskipTests
+  876  cp target/moviefun.war ~/dev/tomee/webapps
+  877  /dev/tomee/bin/catalina.sh run
+  878  ~/dev/tomee/bin/catalina.sh run
+  879  clear
+  880  cf push moviefun -p target/moviefun.war --random-route
+  881  MOVIE_FUN_URL=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io/ mvn test
+  882  MOVIE_FUN_URL=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io/ mvn test -e
+  883  cf push moviefun -p target/moviefun.war -b https://github.com/cloudfoundry-community/tomee-buildpack/releases/download/v4.16.1/tomee-buildpack-v4.16.1.zip --random-route
+  884  cf services
+  885  cf stop moviefun
+  886  cf start moviefun
+  887  cf bind-service moviefun movies-mysql
+  888  cf restage moviefun
+  889  MOVIE_FUN_URL=http://moviefun-example.cfapps.io mvn test
+  890  MOVIE_FUN_URL=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io mvn test
+  891  cf stop
+  892  cf stop movie-fun
+  893  cf apps
+  894  cf stop moviefun
+  895  cf start moviefun
+  896  cd ~/workspace/assignment-submission
+  897  ./gradlew replatformingBuildpacks -PmovieFunUrl=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io
+  898  cd ../movie-fun/
+  899  git checkout -b spring-bootification-work spring-boot-start
+  900  git status
+  901  mysql -uroot
+  902  MOVIE_FUN_URL=http://localhost:8080 mvn test
+  903  mvn clean package -DskipTests
+  904  cf buildpacks
+  905  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+  906  cd ~/workspace/assignment-submission
+  907  ./gradlew replatformingSpringBootification -PmovieFunUrl=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io
+  908  cd ..
+  909  cd movie-fun/
+  910  git status
+  911  git add .
+  912  git commit
+  913  git commit -am "Change to spring boot"
+  914  git st
+  915  git status
+  916  git push
+  917  git push --set-upstream origin spring-bootification-work
+  918  git status
+  919  git checkout -b two-data-sources-work two-data-sources-start
+  920  git branch
+  921  mvn clean package -DskipTes
+  922  cf push moviefun -p target/moviefun.war --random-route
+  923  mysql -uroot
+  924  export
+  925  export VCAP_SERVICES="{\"p-mysql\": [{\"credentials\": {\"jdbcUrl\": \"jdbc:mysql://127.0.0.1:3306/albums?user=root\"}, \"name\": \"albums-mysql\"}, {\"credentials\": {\"jdbcUrl\": \"jdbc:mysql://127.0.0.1:3306/movies?user=root\"}, \"name\": \"movies-mysql\"}]}"
+  926  export
+  927  mvn spring-boot:run
+  928  cf services
+  929  cf bind --help
+  930  cf bind-service --help
+  931  cf bind-service moviefun albums-msql
+  932  cf services
+  933  cf push moviefun -p target/moviefun.war --random-route
+  934  cf bind-service moviefun albums-mysql
+  935  cf push moviefun -p target/moviefun.war --random-route
+  936  export
+  937  history | grep mvn
+  938  mvn spring-boot:run
+  939  cf push moviefun -p target/moviefun.war --random-route
+  940  cd ~/workspace/assignment-submission
+  941  ./gradlew replatformingManagingDataSources -PmovieFunUrl=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io
+  942  git status
+  943  cd ../movie-fun/
+  944  git status
+  945  git add .
+  946  git commit -m "Created 2 database connections"
+  947  git push
+  948  git push --set-upstream origin two-data-sources-work
+  949  git status
+  950  git checkout -b read-resource-from-classpath-work read-resource-from-classpath-start
+  951  git status
+  952  mvn clean package
+  953  cf push moviefun -p target/moviefun.war --random-route
+  954  cf push moviefun -p target/moviefun.war --random-route
+  955  git add .
+  956  git commit -m "Read from csv in classpath"
+  957  git push
+  958  git push --set-upstream origin read-resource-from-classpath-work
+  959  cd ~/workspace/assignment-submission
+  960  ./gradlew replatformingRemovingReadsFromFileSystem -PmovieFunUrl=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io
+  961  cd ../movie-fun/
+  962  git checkout -b write-to-blobstore-work write-to-blobstore-start
+  963  mvn clean package
+  964  cf push moviefun -p target/moviefun.war --random-route
+  965  cf scale moviefun instances 2
+  966  cf scale moviefun -i 2
+  967  mkdir -p ~/shared/moviefun
+  968  minio server ~/shared
+  969  export VCAP_SERVICES='{"user-provided": [{"credentials": {"access_key_id": "OWNUYH6PY96ECE3HYIFX", "bucket": "moviefun", "secret_access_key": "Y6NvNBv+RhAtu3UkMB6+LHZkDvYT6P+dZSFtCoJL", "endpoint": "http://127.0.0.1:9000"}, "name": "photo-storage"}]}'
+  970  export
+  971  mvn spring-boot:run
+  972  minio server ~/shared
+  973  mvn spring-boot:run
+  974  mvn clean package
+  975  mvn spring-boot:run
+  976  mvn clean package
+  977  mvn spring-boot:run
+  978  cf push moviefun -p target/moviefun.war --random-route
+  979  cf create-user-provided-service paper-trail -l syslog-tls://logs4.papertrailapp.com:39730
+  980  cf services
+  981  cf bind-service moviefun paper-trail
+  982  cf restage moviefun
+  983  cd ~/workspace/assignment-submission
+  984  ./gradlew replatformingLogging -PmovieFunUrl=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io
+  985  git status
+  986  cd ../movie-fun/
+  987  git add .
+  988  git commit
+  989  git commit -m "Add logger and papertrail account"
+  990  git push
+  991  git push --set-upstream origin logging-work
+  992  git checkout -b background-jobs-work background-jobs-start
+  993  history | grep mysql
+  994  mysql -uroot
+  995  export
+  996  mvn spring-boot:run
+  997  mysql -uroot
+  998  mysql -uroot movies < database/schema.ddl 
+  999  mvn spring-boot:run
+ 1000  exort
+ 1001  export
+ 1002  mvn spring-boot:run
+ 1003  cf mysql movies-mysql < db/schema.ddl
+ 1004  cf mysql movies-mysql < database/schema.ddl
+ 1005  cf mysql
+ 1006  cf install-plugin -r "CF-Community" mysql-plugin
+ 1007  cf mysql movies-mysql < database/schema.ddl
+ 1008  mvn spring-boot:run
+ 1009  git status
+ 1010  cf push moviefun -p target/moviefun.war --random-route
+ 1011  cf scale moviefun -i 2
+ 1012  aws configure
+ 1013  aws s3 cp albums.csv s3://photo-storage/
+ 1014  aws s3 cp albums.csv s3://photo-storage
+ 1015  aws s3 cp albums.csv s3://
+ 1016  aws s3 cp albums.csv s3://pgangatirkar.gaic.com
+ 1017  cd ~/workspace/assignment-submission
+ 1018  ./gradlew replatformingBackgroundJobsWithDb -PmovieFunUrl=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io
+ 1019  git add .
+ 1020  cd ../movie-fun/
+ 1021  git add .
+ 1022  git commit
+ 1023  git commit -m "Added datatabase scheduling"
+ 1024  git push
+ 1025  git push --set-upstream origin background-jobs-work
+ 1026  git checkout -b background-jobs-rabbit-work background-jobs-rabbit-start
+ 1027  mvn spring-boot:run
+ 1028  cf service rabbit
+ 1029  cf bind-service --help
+ 1030  cf bind-service moviefun rabbit
+ 1031  restage moviefun
+ 1032  cf restage moviefun
+ 1033  mvn spring-boot:run
+ 1034  cf push moviefun -p target/moviefun.war --random-route
+ 1035  curl -X POST http://moviefun-rested-dugong.apps.evans.pal.pivotal.io/rabbit -d ""
+ 1036  cd ~/workspace/assignment-submission
+ 1037  ./gradlew replatformingBackgroundJobsWithAmqp -PmovieFunUrl=https://moviefun-rested-dugong.apps.evans.pal.pivotal.io
+ 1038  cd ..
+ 1039  git status
+ 1040  cd movie-fun/
+ 1041  git status
+ 1042  git add .
+ 1043  git commit -m "Add RabbitMQ"
+ 1044  git push
+ 1045  ./start-load-balancer.sh
+ 1046  ./start-load-balancer.sh 
+ 1047  vim ./start-load-balancer.sh 
+ 1048  nginx
+ 1049  sudo nginx
+ 1050  nginx
+ 1051  sudo ./start-load-balancer.sh 
+ 1052  cf marketplace
+ 1053  cf create-service --help
+ 1054  cf create-service p.mysql db-small albums-msql
+ 1055  cf services
+ 1056  clear
+ 1057  cf env
+ 1058  cf env moviefun
+ 1059  export VCAP_SERVICES='{"p-mysql": [{"credentials": {"jdbcUrl": "jdbc:mysql://127.0.0.1:3306/albums?user=root"}, "name": "albums-mysql"}, {"credentials": {"jdbcUrl": "jdbc:mysql://127.0.0.1:3306/movies?user=root"}, "name": "movies-mysql"}]}'
+ 1060  export
+ 1061  cf services
+ 1062  idea .
+ 1063  cf logs
+ 1064  cf logs moviefun
+ 1065  cf logs moviefun --recent
+ 1066  cf create-service p.mysql db-small albums-mysql
+ 1067  cf services
+ 1068  cf logs moviefun
+ 1069  cf logs moviefun --recent
+ 1070  mvn clean package
+ 1071  mvn spring-boot:run
+ 1072  mvn clean package
+ 1073  minio server ~/shared
+ 1074  mvn clean package
+ 1075  cf push moviefun --random-route --no-start -p target/moviefun.war
+ 1076  cf create-service --help
+ 1077  cf cups --help
+ 1078  cf create-user-provided-service photo-storage -p '{"access_key_id": "AKIAVT7FZ27L2FMCQHHI", "secret_access_key":"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"}'
+ 1079  cf services
+ 1080  cf delete-service --help
+ 1081  cf delete-service photo-storage
+ 1082  cf create-user-provided-service photo-storage -p '{"access_key_id": "AKIAVT7FZ27L2FMCQHHI", "secret_access_key":"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", "bucket":"pgangatirkar.gaic.com"}'
+ 1083  cf services
+ 1084  cf bind-service --help
+ 1085  cf bind-service moviefun photo-storage
+ 1086  cf start --help
+ 1087  cf stop moviefun
+ 1088  cf start moviefun
+ 1089  cd ~/workspace/assignment-submission
+ 1090  ./gradlew replatformingRemovingPersistenceToFileSystem -PmovieFunUrl=http://moviefun-rested-dugong.apps.evans.pal.pivotal.io
+ 1091  git st
+ 1092  git status
+ 1093  git status
+ 1094  git add .
+ 1095  git commit
+ 1096  git commit -m "Add S3 and file implementation"
+ 1097  git push
+ 1098  git push --set-upstream origin write-to-blobstore-work
+ 1099  git checkout -b logging-work logging-start
+ 1100  cf set-env moviefun JAVA_OPTS -Dlogging.level.org.springframework=DEBUG
+ 1101  cf set-env moviefun JAVA_OPTS -Dlogging.level.org.superbiz.moviefun.albums=ERROR
+ 1102  cf set-env moviefun JAVA_OPTS -Dlogging.level.org.superbiz.moviefun.movies=DEBUG
+ 1103  mvn clean package
+ 1104  minio server ~/shared
+ 1105  git status
+ 1106  cf login --help
+ 1107  cf login -a api.sys.evans.pal.pivotal.io
+ 1108  cd ..
+ 1109  cd removing-instance-specific-state/
+ 1110  idea .
+ 1111  git init
+ 1112  git remote add origin https://github.com/msrust0/removing-instance-specific-state.git
+ 1113  mvn -Dmaven.tomcat.port=8080 -DinstanceNumber=0 tomcat7:run-war
+ 1114  CF_INSTANCE_INDEX=0 mvn -Dmaven.tomcat.port=8080 tomcat7:run-war
+ 1115  history
+ 1116  mvn -Dmaven.tomcat.port=9090 -DinstanceNumber=1 tomcat7:run-war
+ 1117  CF_INSTANCE_INDEX=1 mvn -Dmaven.tomcat.port=9090 tomcat7:run-war
+ 1118  cd ..
+ 1119  ls
+ 1120  cd ./struts
+ 1121  mvn  clean package
+ 1122  cf push struts -p target/struts.war --random-route --no-start
+ 1123  cf marketplace
+ 1124  cf cs p.mysql db-small struts-mysql
+ 1125  cf services
+ 1126  cp ../assignment-submission.sh .
+ 1127  cf services
+ 1128  cf bind-service struts struts-mysql
+ 1129  cf start struts
+ 1130  ./assignment-submission.sh 
+ 1131  cf services
+ 1132  cf delete-service my-redis
+ 1133  cf services
+ 1134  cf delete-service --help
+ 1135  cf delete-service my-redis
+ 1136  cf services
+ 1137  git st
+ 1138  git status
+ 1139  git add .
+ 1140  git commit -m "Bootification struts"
+ 1141  git push'
+ 1142  git push
+ 1143  cf service-keys
+ 1144  cf service-keys our-redis
+ 1145  cf unbind-service --help
+ 1146  cf unbind-service struts struts-mysql
+ 1147  redis
+ 1148  start redis-server
+ 1149  redis-server start
+ 1150  redis-server -h
+ 1151  redis-server
+ 1152  mvn clean package
+ 1153  cf push remove-session-state -p target/remove-session-state-lab.war -i 2 --random-route --no-start
+ 1154  cf marketplace
+ 1155  cf create-service p.redis cache-small my-redis
+ 1156  cf services
+ 1157  cf bind-service --help
+ 1158  cf services
+ 1159  cf bind-service remove-session-state my-redis
+ 1160  cf services
+ 1161  cf marketplace
+ 1162  cf services
+ 1163  cf create-service p-redis shared-vm our-redis
+ 1164  cf services
+ 1165  cf bind-service remove-session-state our-redis
+ 1166  cf start remove-session-state
+ 1167  ls
+ 1168  cd ..
+ 1169  cd assignment-submission/
+ 1170  ls
+ 1171  vim build.gradle 
+ 1172  cd ..
+ 1173  cd removing-instance-specific-state/
+ 1174  chmod +x assignment-submission.sh 
+ 1175  ./assignment-submission.sh 
+ 1176  cf services
+ 1177  cp assignment-submission.sh ..
+ 1178  ls ..
+ 1179  cd ..
+ 1180  ls
+ 1181  cd removing-instance-specific-state/
+ 1182  git status
+ 1183  git add .
+ 1184  git commit -m "Remove session state"
+ 1185  git push
+ 1186  pwd
+ 1187  cd ..
+ 1188  ls
+ 1189  cd struts
+ 1190  idea .
+ 1191  git init
+ 1192  git remote add origin https://github.com/msrust0/struts.git
+ 1193  mysql -uroot
+ 1194  mvn spring-boot:run
+ 1195  mvn clean build
+ 1196  mvn clean
+ 1197  mvn package
+ 1198  mvn spring-boot:run
+ 1199  java -version
+ 1200  mvn spring-boot:run
+ 1201  mysql -version
+ 1202  sudo mysql -version
+ 1203  mysql -uroot -V
+ 1204  mvn clean
+ 1205  mvn spring-boot:run
+ 1206  killall -9 java
+ 1207  mvn spring-boot:run
+ 1208  mvn clean
+ 1209  mvn spring-boot:run
+ 1210  mvn clean
+ 1211  mvn spring-boot:run
+ 1212  mvn clean
+ 1213  mvn spring-boot:run
+ 1214  killall -9 java
+ 1215  mvn spring-boot:run
+ 1216  cf ds our-redis
+ 1217  mvn spring-boot:run
+ 1218  cd ..
+ 1219  cd ant/
+ 1220  ls
+ 1221  git init
+ 1222  git remote add origin https://github.com/msrust0/ant.git
+ 1223  git push
+ 1224  rm -rf .idea/
+ 1225  find . -name *.iml -exec rm {} \;
+ 1226  mvn clean package
+ 1227  ls projects/console/target/
+ 1228  ginf . -nsmr z8.jst
+ 1229  find . -name *.jar
+ 1230  mvn clean install
+ 1231  ls repository/local/org.apache.ivy.example/
+ 1232  mvn clean install
+ 1233  ls repository/local/org.apache.ivy.example/
+ 1234  ls ./target/find
+ 1235  ls
+ 1236  find . -name *.jar
+ 1237  ls ./projects/target
+ 1238  mvn clean install
+ 1239  cd projects/
+ 1240  ls
+ 1241  cd console/
+ 1242  ls
+ 1243  ls target/
+ 1244  cd ..
+ 1245  ls repository/local/org.apache.ivy.example/
+ 1246  cd /
+ 1247  ls repository
+ 1248  cd  ~workspace
+ 1249  ls
+ 1250  cd ~/workspace/
+ 1251  cd ant/
+ 1252  mvn clean install
+ 1253  ls
+ 1254  ls ~/.m2/repository/
+ 1255  find ~/.m2/repository/org/apache/ivy/
+ 1256  mvn clean install
+ 1257  cd ~/workspace/assignment-submission
+ 1258  ./gradlew replatformingMavenization
+ 1259  cd ..
+ 1260  cd ant/
+ 1261  git add .
+ 1262  git commit -m "ant to maven"
+ 1263  git push
+ 1264  cd ..
+ 1265  mv ant antToMaven
+ 1266  cd ant
+ 1267  git init
+ 1268  git remote add origin https://github.com/msrust0/antToGradle.git
+ 1269  git push
+ 1270  ls
+ 1271  gradle clean build
+ 1272  gradle clean build --stacktrace
+ 1273  gradle clean build
+ 1274  gradle uploadArchives
+ 1275  history
+ 1276  find ~/.m2/repository/org/apache/ivy/
+ 1277  ls ~/.m2/repository/org/apache/ivy/
+ 1278  ls ~/.m2/repository/org/apache/ivy/example/list/
+ 1279  ls ~/.m2/repository/org/apache/ivy/example/list/1.0
+ 1280  ll ~/.m2/repository/org/apache/ivy/example/list/1.0
+ 1281  ls repository/shared/
+ 1282  ls repository/shared/org.apache.ivy.example/
+ 1283  gradle clean dependenciesGraph
+ 1284  open build/dependenciesGraph/graph.dot.png
+ 1285  ./open build/dependenciesGraph/graph.dot.png
+ 1286  open --help
+ 1287  open build/dependenciesGraph/
+ 1288  cd ~/workspace/assignment-submission
+ 1289  ./gradlew replatformingGradling
+ 1290  cd ..
+ 1291  cd ant
+ 1292  gradle clean dependenciesGraph
+ 1293  git add .
+ 1294  git commit -m "ant to gradle"
+ 1295  git push
+ 1296  xdg build/dependenciesGraph/graph.dot.png
+ 1297  xdg-open build/dependenciesGraph/graph.dot.png
+ 1298  exit
+ 1299  ls
+ 1300  cd workspace/
+ 1301  ls
+ 1302  cf target
+ 1303  cd movie-fun-modernization/
+ 1304  git log --graph --decorate --oneline --all
+ 1305  git remote add origin https://github.com/msrust0/movie-fun-modernization.git
+ 1306  git push
+ 1307  git push origin master --tags
+ 1308  git remote add pravin https://github.com/reply2ppg/movie-fun-modernization.git
+ 1309  git push pravin master --tags
+ 1310  vim .env
+ 1311  echo "source ~/workspace/movie-fun-modernization/.env" >> ~/.bashrc
+ 1312  source ~/.bashrc
+ 1313  env
+ 1314  idea .
+ 1315  cd ..
+ 1316  mv struts struts-bootification
+ 1317  cd ..
+ 1318  cd workspace/struts
+ 1319  git push origin master --tags
+ 1320  git remote add origin https://github.com/msrust0/struts.git
+ 1321  git push origin master --tags
+ 1322  git remote add pravin https://github.com/reply2ppg/struts.git
+ 1323  git push pravin master --tags
+ 1324  git checkout -b struts-modernization-lab modernize-start
+ 1325  history | grep boot
+ 1326  mvn clean spring-boot:run
+ 1327  cd ..
+ 1328  cd assignment-submission/
+ 1329  vim build.gradle 
+ 1330  ./gradlew modernizationStrutsToSpring -PstrutsAppUrl=http://localhost:8080
+ 1331  cd ..
+ 1332  cd struts
+ 1333  git add .
+ 1334  git commit -m "Changed from struts to spring"
+ 1335  git push pravin
+ 1336  git push origin
+ 1337  git push --set-upstream origin struts-modernization-lab
+ 1338  cd ..
+ 1339  cd movie-fun-modernization/
+ 1340  git checkout -b gradlization-work gradlization-start
+ 1341  mysql -uroot -e 'DROP DATABASE IF EXISTS movies; CREATE DATABASE movies;'
+ 1342  mysql -uroot movies < ~/workspace/movie-fun-modernization/db/schema.ddl
+ 1343  ./gradlew
+ 1344  gradle wrapper
+ 1345  ./gradlew tasks
+ 1346  ./gradlew init
+ 1347  ./gradlew assemble
+ 1348  ./gradlew tasks
+ 1349  ./gradlew clean build
+ 1350  ./gradlew tasks
+ 1351  ./gradlew clean bootRun
+ 1352  cd ..
+ 1353  cd struts
+ 1354  cd ..
+ 1355  cd movie-fun-modernization/
+ 1356  git checkout -b multiple-jars-work multiple-jars-start
+ 1357  cf target
+ 1358  cf ds mysql
+ 1359  cf da --help
+ 1360  cf delete --help
+ 1361  cf apps
+ 1362  cf delete movie-fun-app
+ 1363  ls
+ 1364  ./gradlew bootRun
+ 1365  ./gradlew dependenciesGraph
+ 1366  ./gradlew bootRun
+ 1367  ./gradlew dependenciesGraph
+ 1368  ./gradlew clean build
+ 1369  ./gradlew clean bootRun
+ 1370  ./gradlew dependenciesGraph
+ 1371  history | grep mysql
+ 1372  cf cs p.mysql db-small movies-database
+ 1373  cf services
+ 1374  cf push movie-fun-app -p applications/movie-fun-app/build/libs/movie-fun-app-1.1.0-SNAPSHOT.war --no-start --random-route
+ 1375  cf services
+ 1376  cf apps
+ 1377  cf bs movie-fun-app movies-database
+ 1378  cf start movie-fun
+ 1379  cf start movie-fun-app
+ 1380  cf logs movie-fun-app --recent
+ 1381  ./gradlew clean build
+ 1382  ./gradlew clean bootrun
+ 1383  CF SERVICES
+ 1384  cf services
+ 1385  cf marketplace
+ 1386  cf bs movie-fun-app movies-database
+ 1387  cf restage movie-fun-app
+ 1388  history | grep VCAP_SERVICES
+ 1389  export VCAP_SERVICES='{"user-provided": [{"credentials": {"access_key_id": "OWNUYH6PY96ECE3HYIFX", "bucket": "", "secret_access_key": "QOUJY4+QmoF9c0igKypE4aLpWaHaywYoEslEJIAq", "endpoint": "http://127.0.0.1:9000"}, "name": "photo-storage"}]}'
+ 1390  export VCAP_SERVICES='{"user-provided": [{"credentials": {"access_key_id": "AKIAVT7FZ27L6Y7KBA4S", "bucket": "mrust.gaig.com", "secret_access_key": "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", "endpoint": "http://127.0.0.1:9000"}, "name": "photo-storage"}]}'
+ 1391  history | grep set-env
+ 1392  history | grep create-us
+ 1393  cf create-user-provided-service photo-storage -p '{"access_key_id": "AKIAVT7FZ27L6Y7KBA4S", "secret_access_key":"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", "bucket":"mrust.gaig.com"}'
+ 1394  cf services
+ 1395  cf bind photo-storage movie-fun-app
+ 1396  cf bs photo-storage movie-fun-app
+ 1397  cf bs movie-fun-app photo-storage
+ 1398  cf restage movie-fun-app
+ 1399  cd ..
+ 1400  cd assignment-submission/
+ 1401  ./gradlew modernizationMultipleJars -PmovieFunUrl=https://movie-fun-app-turbulent-lemur.apps.evans.pal.pivotal.io
+ 1402  cd ..
+ 1403  cd movie-fun-modernization/
+ 1404  cd ..
+ 1405  cd assignment-submission/
+ 1406  ./gradlew modernizationMavenToGradle -PmovieFunUrl=https://movie-fun-app-turbulent-lemur.apps.evans.pal.pivotal.io
+ 1407  cd ..
+ 1408  cd movie-fun-modernization/
+ 1409  git status
+ 1410  git add .
+ 1411  git commit -m "monolith to component based arch"
+ 1412  git push origin
+ 1413  git push
+ 1414  git push pravin
+ 1415  cf us --help
+ 1416  cf us movie-app-fun movies-database
+ 1417  cf us movie-fun-app movies-database
+ 1418  cf ds movies-database
+ 1419  cf services
+ 1420  git checkout -b microservices-work microservices-start
+ 1421  ./gradlew tasks
+ 1422  ./gradlew dependenciesGraph
+ 1423  export MOVIES_URL=http://localhost:8082/movies
+ 1424  ./gradlew applications:movie-fun-app:bootRun
+ 1425  ./gradlew dependenciesGraph
+ 1426  ./gradlew applications:movie-fun-app:bootRun
+ 1427  mysql -uroot
+ 1428  ./gradlew applications:movie-fun-app:bootRun
+ 1429  export
+ 1430  history | grep export
+ 1431  export VCAP_SERVICES='{"user-provided": [{"credentials": {"access_key_id": "AAAAAAAAA", "bucket": "moviefun", "secret_access_key": "SSSSSSSSS", "endpoint": "http://127.0.0.1:9000"}, "name": "photo-storage"}]}'
+ 1432  export VCAP_SERVICES='{"user-provided": [{"credentials": {"access_key_id": "OWNUYH6PY96ECE3HYIFX", "bucket": "moviefun", "secret_access_key": "Y6NvNBv+RhAtu3UkMB6+LHZkDvYT6P+dZSFtCoJL", "endpoint": "http://127.0.0.1:9000"}, "name": "photo-storage"}]}'
+ 1433  ./gradlew applications:movie-fun-app:bootRun
+ 1434  history
+ 1435  ./gradlew dependenciesGraph
+ 1436  ./gradlew applications:movie-fun-app:bootRun
+ 1437  echo "source ~/workspace/movie-fun-modernization/.env" >> ~/.bashrc
+ 1438  source ~/.bashrc
+ 1439  env
+ 1440  ./gradlew applications:movie-fun-app:bootRun
+ 1441  history | grep VCAP
+ 1442  export VCAP_SERVICES='{"user-provided": [{"credentials": {"access_key_id": "OWNUYH6PY96ECE3HYIFX", "bucket": "moviefun", "secret_access_key": "Y6NvNBv+RhAtu3UkMB6+LHZkDvYT6P+dZSFtCoJL", "endpoint": "http://127.0.0.1:9000"}, "name": "photo-storage"}]}'
+ 1443  ./gradlew applications:movie-fun-app:bootRun
+ 1444  cf services
+ 1445  ./gradlew applications:movie-fun-app:bootRun
+ 1446  ./gradlew clean build
+ 1447  ls
+ 1448  ls build
+ 1449  history
+ 1450  history | grep push
+ 1451  cf push movie-fun-app -p build/libs/moviefun-1.1.0-SNAPSHOT.war --random-route
+ 1452  cf logs movie-fun-app --recent
+ 1453  cf services
+ 1454  history | grep mysql
+ 1455  cf create-service p.mysql db-small mysql
+ 1456  cf services
+ 1457  cf push movie-fun-app -p build/libs/moviefun-1.1.0-SNAPSHOT.war
+ 1458  cf logs movie-fun-app --recent
+ 1459  cf apps
+ 1460  cf bs --help
+ 1461  cf bs movie-fun-app mysql
+ 1462  cf restage movie-fun-app
+ 1463  history | grep mysql
+ 1464  cf mysql mysql < schema.ddl
+ 1465  ls
+ 1466  cf mysql mysql < db/schema.ddl
+ 1467  cf services
+ 1468  ./gradlew clean build
+ 1469  ./gradlew applications:movie-service:bootRun
+ 1470  export ALBUMS_URL=http://localhost:8083/albums
+ 1471  ./gradlew applications:movie-service:bootRun
+ 1472  ./gradlew applications:album-service:bootRun
+ 1473  history | grep VCAP
+ 1474  export VCAP_SERVICES='{"user-provided": [{"credentials": {"access_key_id": "OWNUYH6PY96ECE3HYIFX", "bucket": "moviefun", "secret_access_key": "Y6NvNBv+RhAtu3UkMB6+LHZkDvYT6P+dZSFtCoJL", "endpoint": "http://127.0.0.1:9000"}, "name": "photo-storage"}]}'
+ 1475  ./gradlew applications:album-service:bootRun
+ 1476  export
+ 1477  ./gradlew clean build
+ 1478  cf push
+ 1479  cf env
+ 1480  cf env movie-fun-app
+ 1481  cf unset-env movie-fun-app ALBUMS_URL
+ 1482  cf unset-env movie-fun-app MOVIES_URL
+ 1483  cf restage movie-fun-app
+ 1484  cd ../assignment-submission/
+ 1485  history
+ 1486  mkdir ~/workspace/movie-fun-config
+ 1487  cd ~/workspace/movie-fun-config
+ 1488  git init
+ 1489  git remote add origin https://github.com/msrust0/movie-fun-config.git
+ 1490  git remote add pravin https://github.com/reply2ppg/movie-fun-config.git
+ 1491  vim application.yml
+ 1492  git add application.yml
+ 1493  git commit -m"Initial commit"
+ 1494  git push -u origin master
+ 1495  cf marketplace
+ 1496  cf cs p-config-server standard movie-fun-config-server -c "{\"git\": {\"uri\": \"https://github.com/msrust0/movie-fun-config.git\", \"label\": \"master\"}}"
+ 1497  cf services
+ 1498  cf apps
+ 1499  cd ..
+ 1500  cd movie-fun-modernization/
+ 1501  ./gradlew clean build
+ 1502  cf push
+ 1503  cd ~/workspace/assignment-submission
+ 1504  ./gradlew modernizationConfigServer -PmovieFunUrl=https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io -PuaaUsername=user -PuaaPassword=password
+ 1505  cd ..
+ 1506  cd movie-fun-modernization/
+ 1507  history | grep curl
+ 1508  curl -X POST http://localhost:8080/actuator/refresh
+ 1509  ./gradlew clean build
+ 1510  cf push
+ 1511  history | grep curl
+ 1512  curl -X POST https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/actuator/refresh
+ 1513  curl -X POST https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/refresh
+ 1514  cf env movie-fun-app
+ 1515  curl -k "https://p-identity.login.sys.evans.pal.pivotal.io/oauth/token" -i -u 
+ 1516  curl -k "https://p-identity.login.sys.evans.pal.pivotal.io/oauth/token" -i -u "9ecf0a7a-92f1-4ce7-8402-f4a1c24b46a2:1aee282b-8ad8-4162-b8ae-b80516719b6f" -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=client_credentials&response_type=token'
+ 1517  curl -k "https://p-identity.login.sys.evans.pal.pivotal.io/oauth/token" -i -u "9ecf0a7a-92f1-4ce7-8402-f4a1c24b46a2:1aee282b-8ad8-4162-b8ae-b80516719b6f" -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=authorization_code&response_type=token'
+ 1518  curl -X POST https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/refresh
+ 1519  curl -X POST https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/actuator/refresh
+ 1520  curl -X POST https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/actuator/refreshjjk
+ 1521  curl -X POST https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/actuator/refresh
+ 1522  curl -X POST https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/actuator/refreshjjk
+ 1523  cf push
+ 1524  curl -X POST https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/actuator/refresh
+ 1525  curl -X GET https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/actuator/refresh
+ 1526  curl -X POST https://movie-fun-app-pravin-matt-micro.apps.evans.pal.pivotal.io/actuator/refresh
+ 1527  ./gradlew clean build
+ 1528  cf push
+ 1529  ./gradlew clean build
+ 1530  cf push
+ 1531  git add .
+ 1532  git commit -m "config server"
+ 1533  git push origin master
+ 1534  git push origin
+ 1535  git push pravin
+ 1536  git checkout -b circuit-breaker-work circuit-breaker-start
+ 1537  ./gradlew clean build
+ 1538  cf push
+ 1539  cf env album-service
+ 1540  cf unbind-service --help
+ 1541  cf services
+ 1542  cf unbind-service album-service photo-storage
+ 1543  cf services
+ 1544  cf restage album-service
+ 1545  cf bind-service album-service photo-storage
+ 1546  cf restage album-service
+ 1547  cf services
+ 1548  cf env
+ 1549  cf env album-service
+ 1550  cf env movie-fun-app
+ 1551  history | grep unset
+ 1552  cf unset-env movie-fun-app ALBUMS_URL
+ 1553  cf unset-env movie-fun-app MOVIES_URL
+ 1554  cf unset-env movie-fun-app MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE
+ 1555  cf restage movie-fun-app
+ 1556  git add .
+ 1557  git commit -m "add circuit breaker"
+ 1558  git push origin
+ 1559  git push pravin
+ 1560  cf env movie-fun-app
+ 1561  cf ups --help
+ 1562  cf cups --help
+ 1563  histroy | grep cups
+ 1564  history | grep cups
+ 1565  cf services
+ 1566  history | grep photo-storage
+ 1567  cf uups --help
+ 1568  cf update-user-provided-service photo-storage -p '{"access_key_id": "AKIAVT7FZ27L6Y7KBA4S", "secret_access_key":"QOUJY4+QmoF9c0igKypE4aLpWaHaywYoEslEJIAqXXX", "bucket":"mrust.gaig.com"}'
+ 1569  cf services
+ 1570  cf restage movie-fun app
+ 1571  cf restage movie-fun-app
+ 1572  cf update-user-provided-service photo-storage -p '{"access_key_id": "AKIAVT7FZ27L6Y7KBA4S", "secret_access_key":"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", "bucket":"mrust.gaig.com"}'
+ 1573  cf restage movie-fun-app
+ 1574  cf env movie-fun-app
+ 1575  git checkout -b kotlin-work kotlin-start
+ 1576  ./gradlew test
+ 1577  git add .
+ 1578  git commit -m "move albums to kotlin"
+ 1579  git push origin
+ 1580  git push pravin
+ 1581  cd ..
+ 1582  cd assignment-submission/
+ 1583  ./gradlew modernizationKotlin
+ 1584  history
+ 1585  history > history.log
+ 1586  cp ../movie-fun-modernization/
+ 1587  copy ../movie-fun-modernization/
+ 1588  mv ../movie-fun-modernization/
+ 1589  mv ../movie-fun-modernization/history.log
+ 1590  mv ../movie-fun-modernization/.
+ 1591  ls
+ 1592  cd ..
+ 1593  cd movie-fun-modernization/
+ 1594  history > history.log
